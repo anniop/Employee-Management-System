@@ -12,9 +12,9 @@ function App() {
 
   const handleLogin = (email, password) => {
     if (email === 'admin@me.com' && password === '123') {
-      console.log("This is Admin");
+      setUser('admin');
     } else if (email === 'user@me.com' && password === '123') {
-      console.log("This is User");
+      setUser('employee');
     } else {
       setAlertMessage("Invalid Credentials"); // Trigger custom alert
     }
@@ -27,8 +27,7 @@ function App() {
   return (
     <>
       {!user ? <Login handleLogin={handleLogin} /> : ''}
-      {/* <EmployeeDashboard /> */}
-      {/* <AdminDashboard /> */}
+      {user == 'admin' ? <AdminDashboard /> : <EmployeeDashboard />}
       {alertMessage && <CustomAlert message={alertMessage} onClose={closeAlert} />}
     </>
   );
