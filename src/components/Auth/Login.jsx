@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../App.css'
 
 const Login = ({ handleLogin }) => {
   const [email, setEmail] = useState('')
@@ -10,15 +11,11 @@ const Login = ({ handleLogin }) => {
     setEmail("")
     setPassword("")
   }
+
   return (
-
-
     <div className="flex h-screen w-screen items-center justify-center bg-gray-900">
       <div className="border border-indigo-600 p-8 md:p-16 rounded-3xl shadow-2xl bg-gray-800 transform transition duration-500 hover:shadow-indigo-500/50 hover:scale-105">
-        <form
-          onSubmit={(e) => submitHandler(e)}
-          className="flex flex-col gap-6"
-        >
+        <form onSubmit={submitHandler} className="flex flex-col gap-6">
           <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-500 text-center mb-8 relative">
             <span className="relative z-10">Jay Ganesh</span>
             <span className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 opacity-50 blur-lg hover:opacity-100 transition-opacity duration-500 animate-pulse"></span>
