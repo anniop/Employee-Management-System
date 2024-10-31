@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { setLocalStroage } from '../../utils/localStorage'
-import '../../App.css'
 
 
 export const Header = (props) => {
@@ -12,9 +11,7 @@ export const Header = (props) => {
   }
 
   return (
-
-
-    <div className="relative flex items-end justify-between p-6 md:p-10 bg-gray-900 rounded-xl shadow-lg border border-indigo-600 overflow-hidden transition-transform duration-300 hover:shadow-indigo-500/50">
+    <div className="flex items-end justify-between p-6 md:p-10 bg-gray-900 rounded-xl shadow-lg border border-indigo-600 overflow-hidden transition-transform duration-300 hover:shadow-indigo-500/50">
       <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 opacity-25 blur-lg animate-pulse -z-10"></div>
 
       <h1 className="text-2xl md:text-3xl font-medium text-white space-y-2 transition-all duration-300">
