@@ -22,7 +22,7 @@ const Login = ({ handleLogin }) => {
 
           {/* Heading with appropriate text color */}
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">
-            Employee Login
+            Jay Ganesh
           </h2>
 
           {/* Email input with subtle focus effects */}
