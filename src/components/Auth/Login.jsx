@@ -14,41 +14,39 @@ const Login = ({ handleLogin }) => {
 
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-gray-900">
-      {/* Outer container with background color and shadow */}
-      <div className="border border-indigo-600 p-8 md:p-16 rounded-3xl shadow-2xl bg-gray-800 transform transition duration-500 hover:shadow-indigo-500/50 hover:scale-105">
+      {/* Outer container with a darker background and subtle shadow */}
+      <div className="border border-gray-700 p-8 md:p-12 rounded-xl shadow-lg bg-gray-800">
 
         {/* Form with flex column layout */}
         <form onSubmit={submitHandler} className="flex flex-col gap-6">
 
-          {/* Heading with gradient text effect */}
-          <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-500 text-center mb-8 relative">
-            <span className="relative z-10">Jay Ganesh</span>
-            {/* Glowing background effect */}
-            <span className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 opacity-50 blur-lg hover:opacity-100 transition-opacity duration-500 animate-pulse"></span>
+          {/* Heading with appropriate text color */}
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">
+            Employee Login
           </h2>
 
-          {/* Email input with hover and focus effects */}
+          {/* Email input with subtle focus effects */}
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            placeholder="Enter Your Email"
-            className="border border-indigo-500 py-3 px-5 bg-gray-700 text-white outline-none rounded-full placeholder:text-gray-400 focus:border-indigo-400 transition duration-300 hover:bg-gray-600 hover:shadow-lg"
+            placeholder="Enter your email"
+            className="border border-gray-600 py-3 px-4 bg-gray-700 text-white rounded-lg placeholder-gray-400 focus:outline-none focus:border-indigo-400 transition-colors duration-200"
           />
 
-          {/* Password input with hover and focus effects */}
+          {/* Password input with subtle focus effects */}
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            placeholder="Enter Your Password"
-            className="border border-indigo-500 py-3 px-5 bg-gray-700 text-white outline-none rounded-full placeholder:text-gray-400 focus:border-indigo-400 transition duration-300 hover:bg-gray-600 hover:shadow-lg mt-2"
+            placeholder="Enter your password"
+            className="border border-gray-600 py-3 px-4 bg-gray-700 text-white rounded-lg placeholder-gray-400 focus:outline-none focus:border-indigo-400 transition-colors duration-200"
           />
 
-          {/* Login button with gradient background and hover effects */}
-          <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-600 py-3 px-5 text-white font-semibold rounded-full transition duration-300 hover:shadow-lg hover:from-purple-500 hover:to-indigo-500 hover:scale-105 mt-4">
+          {/* Login button with a simple background */}
+          <button className="bg-indigo-600 py-3 px-4 text-white font-semibold rounded-lg transition duration-200 hover:bg-indigo-500 mt-4">
             Login
           </button>
         </form>

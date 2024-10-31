@@ -53,68 +53,74 @@ const CreateTask = () => {
   };
 
   return (
-    <div className="p-5 bg-gray-800 mt-7 rounded-2xl shadow-2xl border border-indigo-600 transition duration-300 hover:shadow-indigo-500/50">
+    <div className="p-6 bg-gray-900 mt-7 rounded-2xl shadow-lg border border-indigo-600">
       <form onSubmit={submitHandler} className="flex flex-wrap w-full items-start justify-between">
         {/* Left Column */}
-        <div className="w-full md:w-1/2 mb-4 md:mb-0">
-          <div>
-            <h3 className="text-sm text-indigo-300 mb-1">Task Title</h3>
+        <div className="w-full md:w-1/2 mb-6">
+          <div className="mb-4">
+            <label className="text-sm text-indigo-300 mb-1 block">Task Title</label>
             <input
               value={taskTitle}
               onChange={(e) => setTaskTitle(e.target.value)}
-              className="text-sm py-2 px-3 w-[90%] rounded-lg outline-none bg-gray-700 border border-indigo-500 text-gray-200 placeholder:text-gray-400 focus:border-indigo-400 focus:bg-gray-800 transition duration-300"
+              className="text-sm py-2 px-3 w-full rounded-lg bg-gray-800 border border-indigo-500 text-gray-200 placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
               type="text"
               placeholder="Make UI Design"
+              required
             />
           </div>
-          <div className="mt-4">
-            <h3 className="text-sm text-indigo-300 mb-1">Date</h3>
+          <div className="mb-4">
+            <label className="text-sm text-indigo-300 mb-1 block">Date</label>
             <input
               value={taskDate}
               onChange={(e) => setTaskDate(e.target.value)}
-              className="text-sm py-2 px-3 w-[90%] rounded-lg outline-none bg-gray-700 border border-indigo-500 text-gray-200 placeholder:text-gray-400 focus:border-indigo-400 focus:bg-gray-800 transition duration-300"
+              className="text-sm py-2 px-3 w-full rounded-lg bg-gray-800 border border-indigo-500 text-gray-200 placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
               type="date"
+              required
             />
           </div>
-          <div className="mt-4">
-            <h3 className="text-sm text-indigo-300 mb-1">Assign To</h3>
+          <div className="mb-4">
+            <label className="text-sm text-indigo-300 mb-1 block">Assign To</label>
             <input
               value={assignTo}
               onChange={(e) => setAssignTo(e.target.value)}
-              className="text-sm py-2 px-3 w-[90%] rounded-lg outline-none bg-gray-700 border border-indigo-500 text-gray-200 placeholder:text-gray-400 focus:border-indigo-400 focus:bg-gray-800 transition duration-300"
+              className="text-sm py-2 px-3 w-full rounded-lg bg-gray-800 border border-indigo-500 text-gray-200 placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
               type="text"
               placeholder="Employee Name"
+              required
             />
           </div>
-          <div className="mt-4">
-            <h3 className="text-sm text-indigo-300 mb-1">Category</h3>
+          <div className="mb-4">
+            <label className="text-sm text-indigo-300 mb-1 block">Category</label>
             <input
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="text-sm py-2 px-3 w-[90%] rounded-lg outline-none bg-gray-700 border border-indigo-500 text-gray-200 placeholder:text-gray-400 focus:border-indigo-400 focus:bg-gray-800 transition duration-300"
+              className="text-sm py-2 px-3 w-full rounded-lg bg-gray-800 border border-indigo-500 text-gray-200 placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
               type="text"
               placeholder="Design, Dev, etc"
+              required
             />
           </div>
         </div>
 
         {/* Right Column */}
         <div className="w-full md:w-1/2">
-          <h3 className="text-sm text-indigo-300 mb-1">Description</h3>
-          <textarea
-            value={taskDescription}
-            onChange={(e) => setTaskDescription(e.target.value)}
-            className="text-sm py-2 px-3 w-[90%] rounded-lg outline-none bg-gray-700 border border-indigo-500 text-gray-200 placeholder:text-gray-400 focus:border-indigo-400 focus:bg-gray-800 transition duration-300"
-            rows="6"
-            placeholder="Add task description"
-          ></textarea>
-          <button className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 py-3 px-5 text-white font-medium rounded-lg w-[90%] mt-4 shadow-md hover:from-pink-500 hover:to-red-600 hover:shadow-lg transition duration-300 transform hover:scale-105 active:scale-95 focus:ring-4 focus:ring-purple-700">
+          <div className="mb-4">
+            <label className="text-sm text-indigo-300 mb-1 block">Description</label>
+            <textarea
+              value={taskDescription}
+              onChange={(e) => setTaskDescription(e.target.value)}
+              className="text-sm py-2 px-3 w-full rounded-lg bg-gray-800 border border-indigo-500 text-gray-200 placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
+              rows="6"
+              placeholder="Add task description"
+              required
+            ></textarea>
+          </div>
+          <button className="mt-4 w-full py-3 bg-indigo-600 text-white font-medium rounded-lg shadow-md transition duration-300 hover:bg-indigo-700">
             Create Task
           </button>
         </div>
       </form>
     </div>
   );
-};
-
+}
 export default CreateTask;

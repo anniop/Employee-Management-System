@@ -1,5 +1,3 @@
-
-
 import { FaExclamationCircle } from "react-icons/fa";
 
 const CustomAlert = ({ message, onClose }) => {

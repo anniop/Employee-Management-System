@@ -233,6 +233,148 @@ const employees = [
       "completed": 1,
       "failed": 1
     }
+  },
+  // New Users
+  {
+    "id": 6,
+    "firstName": "Amol",
+    "email": "amol@gmail.com",
+    "password": "123",
+    "tasks": [
+      {
+        "taskTitle": "Create User Interface Mockups",
+        "description": "Design mockups for the user interface.",
+        "taskDate": "2024-10-29",
+        "category": "Design",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false,
+        "priority": "high"
+      },
+      {
+        "taskTitle": "Conduct Usability Testing",
+        "description": "Test the user interface with potential users and gather feedback.",
+        "taskDate": "2024-11-01",
+        "category": "Testing",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false,
+        "priority": "medium"
+      },
+      {
+        "taskTitle": "Implement Design Changes",
+        "description": "Make design changes based on feedback from usability testing.",
+        "taskDate": "2024-11-02",
+        "category": "Design",
+        "active": false,
+        "newTask": false,
+        "completed": false,
+        "failed": false,
+        "priority": "low"
+      }
+    ],
+    "taskCount": {
+      "active": 2,
+      "newTask": 2,
+      "completed": 0,
+      "failed": 0
+    }
+  },
+  {
+    "id": 7,
+    "firstName": "Gautam",
+    "email": "gautam@gmail.com",
+    "password": "123",
+    "tasks": [
+      {
+        "taskTitle": "Implement API Security",
+        "description": "Ensure that API endpoints are secured against unauthorized access.",
+        "taskDate": "2024-10-30",
+        "category": "Security",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false,
+        "priority": "high"
+      },
+      {
+        "taskTitle": "Prepare Release Notes",
+        "description": "Document the changes and features for the next release.",
+        "taskDate": "2024-11-01",
+        "category": "Documentation",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false,
+        "priority": "medium"
+      },
+      {
+        "taskTitle": "Conduct Code Walkthrough",
+        "description": "Guide team members through the recent code changes.",
+        "taskDate": "2024-11-02",
+        "category": "Review",
+        "active": false,
+        "newTask": false,
+        "completed": false,
+        "failed": false,
+        "priority": "low"
+      }
+    ],
+    "taskCount": {
+      "active": 2,
+      "newTask": 2,
+      "completed": 0,
+      "failed": 0
+    }
+  },
+  {
+    "id": 8,
+    "firstName": "Gaurav",
+    "email": "gaurav@gmail.com",
+    "password": "123",
+    "tasks": [
+      {
+        "taskTitle": "Setup Development Environment",
+        "description": "Configure the local development environment for new team members.",
+        "taskDate": "2024-10-29",
+        "category": "Setup",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false,
+        "priority": "high"
+      },
+      {
+        "taskTitle": "Write Unit Tests",
+        "description": "Develop unit tests for the new features implemented in the application.",
+        "taskDate": "2024-11-01",
+        "category": "Testing",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false,
+        "priority": "medium"
+      },
+      {
+        "taskTitle": "Optimize Database Queries",
+        "description": "Review and optimize database queries for better performance.",
+        "taskDate": "2024-11-02",
+        "category": "Database",
+        "active": false,
+        "newTask": false,
+        "completed": false,
+        "failed": false,
+        "priority": "low"
+      }
+    ],
+    "taskCount": {
+      "active": 2,
+      "newTask": 2,
+      "completed": 0,
+      "failed": 0
+    }
   }
 ];
 
