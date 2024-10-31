@@ -3,13 +3,13 @@ import React, { useContext, useEffect, useState } from 'react';
 import Login from './components/Auth/Login';
 import EmployeeDashboard from './components/Dashboard/EmployeeDashboard';
 import AdminDashboard from './components/Dashboard/AdminDashboard';
-import CustomAlert from './components/others/CustomAlert'; // Import your CustomAlert component
+import CustomAlert from './components/others/CustomAlert';
 import { AuthContext } from './context/AuthProvider';
 
 const App = () => {
   const [user, setUser] = useState(null);
   const [loggedInUserData, setLoggedInUserData] = useState();
-  const [alertMessage, setAlertMessage] = useState(null); // State to control the alert message
+  const [alertMessage, setAlertMessage] = useState(null);
   const [userData, setUserData] = useContext(AuthContext);
 
   useEffect(() => {
@@ -33,25 +33,27 @@ const App = () => {
         setLoggedInUserData(employee);
         localStorage.setItem('loggedInUser', JSON.stringify({ role: 'employee', data: employee }));
       } else {
-        setAlertMessage("Invalid Credentials"); // Set the alert message when login fails
+        setAlertMessage("Invalid Credentials");
       }
     } else {
-      setAlertMessage("Invalid Credentials"); // Set the alert message when login fails
+      setAlertMessage("Invalid Credentials");
     }
   };
 
   const handleCloseAlert = () => {
-    setAlertMessage(null); // Clear the alert message to close CustomAlert
+    setAlertMessage(null);
   };
 
   return (
     <>
-      {!user ? <Login handleLogin={handleLogin} /> : null}
-      {user === 'admin' ? (
+      {!user ? (
+        <Login handleLogin={handleLogin} />
+      ) : user === 'admin' ? (
         <AdminDashboard changeUser={setUser} />
       ) : user === 'employee' ? (
         <EmployeeDashboard changeUser={setUser} data={loggedInUserData} />
       ) : null}
+
       {alertMessage && (
         <CustomAlert message={alertMessage} onClose={handleCloseAlert} />
       )}
