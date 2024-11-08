@@ -2,7 +2,7 @@
 import React from 'react';
 import '../../utils/localStorage'
 
-export const Header = ({ changeUser, data }) => {
+export const Header = ({ changeUser, data = {} }) => {
   const logOutUser = () => {
     localStorage.setItem('loggedInUser', '');
     changeUser('');
