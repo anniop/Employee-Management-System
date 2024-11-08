@@ -16,11 +16,13 @@ export const Header = ({ changeUser, data = {} }) => {
           {username} 👋
         </span>
       </h1>
-      <button
-        onClick={logOutUser}
-        className="bg-red-500 text-lg md:text-xl font-medium text-white px-6 py-2 rounded-lg shadow-md transition-transform duration-200 hover:scale-105 hover:bg-red-600">
-        Logout
-      </button>
+      <div className='mx-0 my-auto'>
+        <button
+          onClick={logOutUser}
+          className="bg-red-500 text-lg md:text-xl font-medium text-white px-6 py-2 rounded-lg shadow-md transition-transform duration-200 hover:scale-105 hover:bg-red-600">
+          Logout
+        </button>
+      </div>
     </div>
   );
 };
