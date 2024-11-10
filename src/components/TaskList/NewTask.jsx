@@ -7,7 +7,7 @@ const NewTask = ({ data }) => {
         <h3 className="bg-red-700 text-white px-3 py-1 rounded-xl text-sm font-semibold">{data.category}</h3>
         <h3 className="text-sm text-gray-200">{data.taskDate}</h3>
       </div>
-      <h2 className="mt-5 text-2xl font-semibold text-white">{data.taskTitle}</h2>
+      <h2 className="mt-5 text-2xl font-semibold text-white">{data.taskTitle + "TEst"}</h2>
       <p className="text-sm mt-2 text-gray-300">{data.description}</p>
       <div className='mt-4'>
         <button className='w-full bg-gradient-to-br from-green-400 to-green-600'>Accept Task</button>
