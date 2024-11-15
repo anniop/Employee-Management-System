@@ -11,6 +11,6 @@ const EmployeeDashboard = (props) => {
       <TaskList data={props.data} />
     </div>
   );
-}
+};
 
 export default EmployeeDashboard;
