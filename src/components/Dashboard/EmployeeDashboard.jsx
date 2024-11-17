@@ -9,7 +9,6 @@ const EmployeeDashboard = (props) => {
       <Header changeUser={props.changeUser} data={props.data} />
       <TaskListNumbers data={props.data} />
       <TaskList data={props.data} />
-
     </div>
   );
 };
