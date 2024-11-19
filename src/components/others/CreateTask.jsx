@@ -28,7 +28,6 @@ export const DropdownList = ({
 
 const CreateTask = () => {
   const [userData, setUserData] = useContext(AuthContext);
-
   const [taskTitle, setTaskTitle] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
   const [taskDate, setTaskDate] = useState("");
@@ -45,13 +44,11 @@ const CreateTask = () => {
   ]);
 
   useEffect(() => {
-    const employeesData = localStorage.getItem("employees");
-    if (employeesData) {
-      const employees = JSON.parse(employeesData);
-      const assigneeNames = employees.map((employee) => employee.firstName);
+    if (userData) {
+      const assigneeNames = userData.map((user) => user.firstName);
       setAssignees(assigneeNames);
     }
-  }, []);
+  }, [userData]);
 
   const submitHandler = (e) => {
     e.preventDefault();
