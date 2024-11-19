@@ -1,10 +1,17 @@
 import React, { useContext, useState, useEffect } from "react";
 import { AuthContext } from "../../context/AuthProvider";
 
-export const DropdownList = ({ label, onChange, placeholder, values }) => (
+export const DropdownList = ({
+  label,
+  onChange,
+  placeholder,
+  values,
+  value,
+}) => (
   <div className="mb-3">
     <label className="text-sm text-indigo-300 mb-1 block">{label}</label>
     <select
+      value={value}
       onChange={onChange}
       className="text-sm py-2 px-3 w-full rounded-lg bg-gray-800 border border-indigo-500 text-gray-200 placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
       required
@@ -127,6 +134,7 @@ const CreateTask = () => {
             onChange={(e) => setAssignTo(e.target.value)}
             placeholder="Assigned To"
             values={assignees}
+            value={assignTo}
             required
           />
           <DropdownList
@@ -134,6 +142,7 @@ const CreateTask = () => {
             onChange={(e) => setPriority(e.target.value)}
             placeholder="Select Priority"
             values={["High", "Medium", "Low"]}
+            value={priority}
             required
           />
           <DropdownList
@@ -141,6 +150,7 @@ const CreateTask = () => {
             onChange={(e) => setCategory(e.target.value)}
             placeholder="Select Category"
             values={categories}
+            value={category}
             required
           />
           <div className="mb-4">
