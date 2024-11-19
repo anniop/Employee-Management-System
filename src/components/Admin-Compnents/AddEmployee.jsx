@@ -40,13 +40,14 @@ const AddEmployee = () => {
   }, [userData]);
 
   return (
-    <div className="p-6 bg-gray-800 mt-7 rounded-2xl shadow-lg border border-indigo-500 max-w-xl mx-auto">
+    <div className="p-8 bg-gradient-to-r from-gray-800 to-gray-900 mt-7 rounded-3xl shadow-xl border border-indigo-500 max-w-xl mx-auto">
+      <h2 className="text-2xl font-bold text-center text-indigo-400 mb-6">Add Employee</h2>
       <form onSubmit={submitHandler} className="flex flex-col space-y-6">
-        <div className="space-y-4">
+        <div className="space-y-5">
           <div>
             <label
               htmlFor="firstName"
-              className="text-sm text-indigo-300 mb-1 block"
+              className="text-sm font-medium text-indigo-300 mb-2 block"
             >
               First Name
             </label>
@@ -54,16 +55,16 @@ const AddEmployee = () => {
               id="firstName"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
-              className="text-sm py-2 px-4 w-full rounded-md bg-gray-700 border border-gray-600 text-gray-200 placeholder-gray-400 focus:border-indigo-500 focus:ring focus:ring-indigo-400 focus:outline-none transition duration-200"
+              className="text-sm py-3 px-4 w-full rounded-xl bg-gray-800 border border-gray-700 text-gray-300 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-400 focus:outline-none transition-all duration-300"
               type="text"
-              placeholder="TestUser"
+              placeholder="Enter your first name"
               required
             />
           </div>
           <div>
             <label
               htmlFor="email"
-              className="text-sm text-indigo-300 mb-1 block"
+              className="text-sm font-medium text-indigo-300 mb-2 block"
             >
               Email
             </label>
@@ -71,16 +72,16 @@ const AddEmployee = () => {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="text-sm py-2 px-4 w-full rounded-md bg-gray-700 border border-gray-600 text-gray-200 placeholder-gray-400 focus:border-indigo-500 focus:ring focus:ring-indigo-400 focus:outline-none transition duration-200"
+              className="text-sm py-3 px-4 w-full rounded-xl bg-gray-800 border border-gray-700 text-gray-300 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-400 focus:outline-none transition-all duration-300"
               type="email"
-              placeholder="test.user@something.com"
+              placeholder="Enter your email"
               required
             />
           </div>
           <div>
             <label
               htmlFor="password"
-              className="text-sm text-indigo-300 mb-1 block"
+              className="text-sm font-medium text-indigo-300 mb-2 block"
             >
               Password
             </label>
@@ -88,14 +89,14 @@ const AddEmployee = () => {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="text-sm py-2 px-4 w-full rounded-md bg-gray-700 border border-gray-600 text-gray-200 placeholder-gray-400 focus:border-indigo-500 focus:ring focus:ring-indigo-400 focus:outline-none transition duration-200"
+              className="text-sm py-3 px-4 w-full rounded-xl bg-gray-800 border border-gray-700 text-gray-300 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-400 focus:outline-none transition-all duration-300"
               type="password"
-              placeholder="Enter password"
+              placeholder="Enter your password"
               required
             />
           </div>
         </div>
-        <button className="w-full py-3 bg-indigo-600 text-white font-medium rounded-lg shadow-md transition duration-300 hover:bg-indigo-700 focus:ring focus:ring-indigo-500 focus:outline-none">
+        <button className="w-full py-3 bg-gradient-to-r from-indigo-500 to-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-transform transform hover:scale-105 focus:ring focus:ring-indigo-400 focus:outline-none">
           Add Employee
         </button>
       </form>
