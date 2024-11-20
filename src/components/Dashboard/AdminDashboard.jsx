@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Header } from "../others/Header";
 import CreateTask from "../Admin-Compnents/CreateTask";
 import AllTask from "../others/AllTask";
@@ -11,6 +11,9 @@ const AdminDashboard = (props) => {
 
   const handleCreateTaskToggle = () => setShowCreateTask((prev) => !prev);
   const handleAddEmployeeToggle = () => setShowAddEmployee((prev) => !prev);
+
+  const closeCreateTask = () => setShowCreateTask(false);
+  const closeAddEmployee = () => setShowAddEmployee(false);
 
   return (
     <div className="h-screen w-full p-10">
@@ -37,7 +40,7 @@ const AdminDashboard = (props) => {
           <div className="text-left">
             <h3 className="text-2xl font-semibold">Add Employee</h3>
             <p className="mt-1 text-sm text-gray-200">
-              Add and manager team members.
+              Add and manage team members.
             </p>
           </div>
         </button>
@@ -45,8 +48,8 @@ const AdminDashboard = (props) => {
       <div className="mt-10">
         <AllTask />
       </div>
-      {showCreateTask && <CreateTask />}
-      {showAddEmployee && <AddEmployee />}
+      {showCreateTask && <CreateTask closeCreateTask={closeCreateTask} />}
+      {showAddEmployee && <AddEmployee closeAddEmployee={closeAddEmployee} />}
     </div>
   );
 };
