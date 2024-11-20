@@ -128,7 +128,7 @@ const CreateTask = ({ closeCreateTask }) => {
               <textarea
                 value={taskDescription}
                 onChange={(e) => setTaskDescription(e.target.value)}
-                className="text-sm py-2 px-3 w-full bg-gray-100 rounded-lg border border-gray-300 text-back placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
+                className="text-sm py-2 px-3 w-full bg-gray-100 rounded-lg border border-gray-300 text-black placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
                 rows="8"
                 placeholder="Add task description"
                 required
