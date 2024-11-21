@@ -7,7 +7,7 @@ const employees = [
     "tasks": [
       {
         "taskTitle": "Initialize Project Repository",
-        "description": "Complete the project setup and initialize the repository.",
+        "taskDescription": "Complete the project setup and initialize the repository.",
         "taskDate": "2024-10-26",
         "category": "Setup",
         "active": true,
@@ -18,7 +18,7 @@ const employees = [
       },
       {
         "taskTitle": "Develop Login Module",
-        "description": "Create the login functionality for user authentication.",
+        "taskDescription": "Create the login functionality for user authentication.",
         "taskDate": "2024-10-27",
         "category": "Development",
         "active": true,
@@ -29,7 +29,7 @@ const employees = [
       },
       {
         "taskTitle": "Code Review Preparation",
-        "description": "Attend the code review session to discuss recent changes.",
+        "taskDescription": "Attend the code review session to discuss recent changes.",
         "taskDate": "2024-10-28",
         "category": "Review",
         "active": false,
@@ -54,7 +54,7 @@ const employees = [
     "tasks": [
       {
         "taskTitle": "Draft Technical Documentation",
-        "description": "Write technical documentation for the API services.",
+        "taskDescription": "Write technical documentation for the API services.",
         "taskDate": "2024-10-26",
         "category": "Documentation",
         "active": true,
@@ -65,7 +65,7 @@ const employees = [
       },
       {
         "taskTitle": "Fix Payment Gateway Bug",
-        "description": "Resolve the bug affecting the payment gateway integration.",
+        "taskDescription": "Resolve the bug affecting the payment gateway integration.",
         "taskDate": "2024-10-27",
         "category": "Bug Fix",
         "active": true,
@@ -76,7 +76,7 @@ const employees = [
       },
       {
         "taskTitle": "Update API Endpoints",
-        "description": "Ensure all API endpoints are up-to-date.",
+        "taskDescription": "Ensure all API endpoints are up-to-date.",
         "taskDate": "2024-10-28",
         "category": "Development",
         "active": false,
@@ -101,7 +101,7 @@ const employees = [
     "tasks": [
       {
         "taskTitle": "Update Server Dependencies",
-        "description": "Ensure all server dependencies are up-to-date.",
+        "taskDescription": "Ensure all server dependencies are up-to-date.",
         "taskDate": "2024-10-26",
         "category": "Maintenance",
         "active": true,
@@ -112,7 +112,7 @@ const employees = [
       },
       {
         "taskTitle": "Design New UI Layout",
-        "description": "Create a new user interface design for the dashboard.",
+        "taskDescription": "Create a new user interface design for the dashboard.",
         "taskDate": "2024-10-27",
         "category": "Design",
         "active": false,
@@ -123,7 +123,7 @@ const employees = [
       },
       {
         "taskTitle": "Backend API Integration",
-        "description": "Integrate the backend APIs with the front-end modules.",
+        "taskDescription": "Integrate the backend APIs with the front-end modules.",
         "taskDate": "2024-10-28",
         "category": "Integration",
         "active": true,
@@ -148,7 +148,7 @@ const employees = [
     "tasks": [
       {
         "taskTitle": "Prepare Project Presentation",
-        "description": "Create slides and prepare for the project presentation.",
+        "taskDescription": "Create slides and prepare for the project presentation.",
         "taskDate": "2024-10-26",
         "category": "Preparation",
         "active": true,
@@ -159,7 +159,7 @@ const employees = [
       },
       {
         "taskTitle": "Update Database Schema",
-        "description": "Apply necessary changes to the database schema.",
+        "taskDescription": "Apply necessary changes to the database schema.",
         "taskDate": "2024-10-27",
         "category": "Database",
         "active": false,
@@ -170,7 +170,7 @@ const employees = [
       },
       {
         "taskTitle": "Optimize Code Performance",
-        "description": "Refactor code to improve performance and efficiency.",
+        "taskDescription": "Refactor code to improve performance and efficiency.",
         "taskDate": "2024-10-28",
         "category": "Optimization",
         "active": true,
@@ -195,7 +195,7 @@ const employees = [
     "tasks": [
       {
         "taskTitle": "Conduct User Interviews",
-        "description": "Interview users to gather feedback on the new feature.",
+        "taskDescription": "Interview users to gather feedback on the new feature.",
         "taskDate": "2024-10-26",
         "category": "Research",
         "active": false,
@@ -206,7 +206,7 @@ const employees = [
       },
       {
         "taskTitle": "Compile Feedback Report",
-        "description": "Analyze user feedback and compile a report.",
+        "taskDescription": "Analyze user feedback and compile a report.",
         "taskDate": "2024-10-27",
         "category": "Analysis",
         "active": true,
@@ -217,7 +217,7 @@ const employees = [
       },
       {
         "taskTitle": "Review User Feedback",
-        "description": "Discuss feedback with the team and strategize improvements.",
+        "taskDescription": "Discuss feedback with the team and strategize improvements.",
         "taskDate": "2024-10-28",
         "category": "Review",
         "active": true,
@@ -243,7 +243,7 @@ const employees = [
     "tasks": [
       {
         "taskTitle": "Create User Interface Mockups",
-        "description": "Design mockups for the user interface.",
+        "taskDescription": "Design mockups for the user interface.",
         "taskDate": "2024-10-29",
         "category": "Design",
         "active": true,
@@ -254,7 +254,7 @@ const employees = [
       },
       {
         "taskTitle": "Conduct Usability Testing",
-        "description": "Test the user interface with potential users and gather feedback.",
+        "taskDescription": "Test the user interface with potential users and gather feedback.",
         "taskDate": "2024-11-01",
         "category": "Testing",
         "active": true,
@@ -265,7 +265,7 @@ const employees = [
       },
       {
         "taskTitle": "Implement Design Changes",
-        "description": "Make design changes based on feedback from usability testing.",
+        "taskDescription": "Make design changes based on feedback from usability testing.",
         "taskDate": "2024-11-02",
         "category": "Design",
         "active": false,
@@ -290,7 +290,7 @@ const employees = [
     "tasks": [
       {
         "taskTitle": "Implement API Security",
-        "description": "Ensure that API endpoints are secured against unauthorized access.",
+        "taskDescription": "Ensure that API endpoints are secured against unauthorized access.",
         "taskDate": "2024-10-30",
         "category": "Security",
         "active": true,
@@ -301,7 +301,7 @@ const employees = [
       },
       {
         "taskTitle": "Prepare Release Notes",
-        "description": "Document the changes and features for the next release.",
+        "taskDescription": "Document the changes and features for the next release.",
         "taskDate": "2024-11-01",
         "category": "Documentation",
         "active": true,
@@ -312,7 +312,7 @@ const employees = [
       },
       {
         "taskTitle": "Conduct Code Walkthrough",
-        "description": "Guide team members through the recent code changes.",
+        "taskDescription": "Guide team members through the recent code changes.",
         "taskDate": "2024-11-02",
         "category": "Review",
         "active": false,
@@ -337,7 +337,7 @@ const employees = [
     "tasks": [
       {
         "taskTitle": "Setup Development Environment",
-        "description": "Configure the local development environment for new team members.",
+        "taskDescription": "Configure the local development environment for new team members.",
         "taskDate": "2024-10-29",
         "category": "Setup",
         "active": true,
@@ -348,7 +348,7 @@ const employees = [
       },
       {
         "taskTitle": "Write Unit Tests",
-        "description": "Develop unit tests for the new features implemented in the application.",
+        "taskDescription": "Develop unit tests for the new features implemented in the application.",
         "taskDate": "2024-11-01",
         "category": "Testing",
         "active": true,
@@ -359,7 +359,7 @@ const employees = [
       },
       {
         "taskTitle": "Optimize Database Queries",
-        "description": "Review and optimize database queries for better performance.",
+        "taskDescription": "Review and optimize database queries for better performance.",
         "taskDate": "2024-11-02",
         "category": "Database",
         "active": false,
