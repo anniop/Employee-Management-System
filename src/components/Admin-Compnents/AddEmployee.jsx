@@ -9,6 +9,9 @@ const AddEmployee = ({ closeAddEmployee }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  // State for alert visibility
+  const [alertVisible, setAlertVisible] = useState(false);
+
   const submitHandler = (e) => {
     e.preventDefault();
 
@@ -33,6 +36,12 @@ const AddEmployee = ({ closeAddEmployee }) => {
     setFirstName("");
     setEmail("");
     setPassword("");
+
+    setAlertVisible(true);
+
+    setTimeout(() => {
+      setAlertVisible(false);
+    }, 3000);
   };
 
   useEffect(() => {
@@ -42,26 +51,26 @@ const AddEmployee = ({ closeAddEmployee }) => {
 
   return (
     <div className="shadow-lg fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-lg z-50">
-      <div className="bg-white text-gray-800 shadow-lg rounded-lg max-w-lg w-full p-6 z-50">
+      <div className="bg-gray-800 text-white shadow-lg rounded-lg max-w-lg w-full p-6 z-50">
         <div className="flex justify-between mb-4">
-          <h2 className="text-xl font-semibold text-indigo-500">Create Task</h2>
+          <h2 className="text-xl font-semibold text-indigo-500">Create Employee</h2>
           <XMarkIcon
             className="h-6 w-6 cursor-pointer"
-            style={{ stroke: "black", fill: "none" }}
+            style={{ stroke: "white", fill: "none" }}
             onClick={closeAddEmployee}
           />
         </div>
         <form onSubmit={submitHandler} className="flex flex-col space-y-6">
           <div className="space-y-5">
             <div>
-              <label className="text-sm text-gray-600 mb-1 block">
+              <label className="text-sm text-gray-300 mb-1 block">
                 First Name
               </label>
               <input
                 id="firstName"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                className="text-sm py-2 px-4 w-full bg-gray-100 rounded-lg border border-gray-300 text-black placeholder:text-gray-400 focus:bg-white focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 transition duration-300"
+                className="text-sm py-2 px-4 w-full bg-gray-700 rounded-lg border border-gray-600 text-white placeholder:text-gray-400 focus:bg-gray-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 transition duration-300"
                 type="text"
                 placeholder="Enter your first name"
                 required
@@ -70,7 +79,7 @@ const AddEmployee = ({ closeAddEmployee }) => {
             <div>
               <label
                 htmlFor="email"
-                className="text-sm text-gray-600 mb-1 block"
+                className="text-sm text-gray-300 mb-1 block"
               >
                 Email
               </label>
@@ -78,7 +87,7 @@ const AddEmployee = ({ closeAddEmployee }) => {
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="text-sm py-2 px-4 w-full bg-gray-100 rounded-lg border border-gray-300 text-black placeholder:text-gray-400 focus:bg-white focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 transition duration-300"
+                className="text-sm py-2 px-4 w-full bg-gray-700 rounded-lg border border-gray-600 text-white placeholder:text-gray-400 focus:bg-gray-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 transition duration-300"
                 type="email"
                 placeholder="Enter your email"
                 required
@@ -87,7 +96,7 @@ const AddEmployee = ({ closeAddEmployee }) => {
             <div>
               <label
                 htmlFor="password"
-                className="text-sm text-gray-600 mb-1 block"
+                className="text-sm text-gray-300 mb-1 block"
               >
                 Password
               </label>
@@ -95,7 +104,7 @@ const AddEmployee = ({ closeAddEmployee }) => {
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="text-sm py-2 px-4 w-full bg-gray-100 rounded-lg border border-gray-300 text-black placeholder:text-gray-400 focus:bg-white focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 transition duration-300"
+                className="text-sm py-2 px-4 w-full bg-gray-700 rounded-lg border border-gray-600 text-white placeholder:text-gray-400 focus:bg-gray-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 transition duration-300"
                 type="password"
                 placeholder="Enter your password"
                 required
@@ -107,6 +116,12 @@ const AddEmployee = ({ closeAddEmployee }) => {
           </button>
         </form>
       </div>
+
+      {alertVisible && (
+        <div className="fixed bottom-5 left-1/2 transform -translate-x-1/2 p-4 bg-green-500 text-white rounded-md shadow-lg">
+          <p>Employee Added Successfully</p>
+        </div>
+      )}
     </div>
   );
 };

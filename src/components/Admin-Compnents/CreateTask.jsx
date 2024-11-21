@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../../context/AuthProvider";
 import { XMarkIcon } from "@heroicons/react/24/solid";
+import Notification from "./Notification";  // Import the Notification component
 
 export const DropdownList = ({
   label,
@@ -10,16 +11,16 @@ export const DropdownList = ({
   value,
 }) => (
   <div className="mb-3">
-    <label className="text-sm text-black mb-1 block">{label}</label>
+    <label className="text-sm text-white mb-1 block">{label}</label>
     <select
       value={value}
       onChange={onChange}
-      className=" text-sm py-2 px-3 w-full rounded-lg bg-gray-100 border border-gray-300 text-black placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
+      className="text-sm py-2 px-3 w-full rounded-lg bg-gray-700 border border-gray-600 text-white placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
       required
     >
-      <option value="" >{placeholder}</option>
+      <option value="">{placeholder}</option>
       {values.map((value) => (
-        <option className="text-black" key={value} value={value}>
+        <option className="text-white" key={value} value={value}>
           {value}
         </option>
       ))}
@@ -43,6 +44,8 @@ const CreateTask = ({ closeCreateTask }) => {
     "Marketing",
     "Sales",
   ]);
+
+  const [showNotification, setShowNotification] = useState(false);  // State to control notification visibility
 
   useEffect(() => {
     if (userData) {
@@ -82,8 +85,14 @@ const CreateTask = ({ closeCreateTask }) => {
     });
 
     setUserData(updatedData);
-    console.log(updatedData);
 
+    setShowNotification(true);
+
+    setTimeout(() => {
+      setShowNotification(false);
+    }, 3000);
+
+    // Reset form
     setTaskTitle("");
     setCategory("");
     setAssignTo("");
@@ -93,14 +102,14 @@ const CreateTask = ({ closeCreateTask }) => {
   };
 
   return (
-    <div className="shadow-lg fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-lg z-50">
-      <div className="bg-white text-gray-800 shadow-lg rounded-lg w-[1000px] p-6 z-50">
+    <div className="shadow-lg fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 backdrop-blur-lg z-50">
+      <div className="bg-gray-800 text-white shadow-lg rounded-lg w-[1000px] p-6 z-50">
         <div className="flex justify-between mb-4">
           <h2 className="text-xl font-semibold text-indigo-500">Create Task</h2>
           <XMarkIcon
             className="h-6 w-6 cursor-pointer"
-            style={{ fill: "black" }}
-            onClick={closeCreateTask} // Call the close function
+            style={{ fill: "white" }}
+            onClick={closeCreateTask}
           />
         </div>
         <form
@@ -109,26 +118,26 @@ const CreateTask = ({ closeCreateTask }) => {
         >
           <div className="w-full md:w-1/2 md:pr-3">
             <div className="mb-4">
-              <label className="text-sm text-gray-600 mb-1 block">
+              <label className="text-sm text-gray-300 mb-1 block">
                 Task Title
               </label>
               <input
                 value={taskTitle}
                 onChange={(e) => setTaskTitle(e.target.value)}
-                className="text-sm py-2 px-3 w-full bg-gray-100 rounded-lg border border-gray-300 text-black placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
+                className="text-sm py-2 px-3 w-full bg-gray-700 rounded-lg border border-gray-600 text-white placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
                 type="text"
                 placeholder="Make UI Design"
                 required
               />
             </div>
             <div className="mb-4">
-              <label className="text-sm text-gray-600 mb-1 block">
+              <label className="text-sm text-gray-300 mb-1 block">
                 Description
               </label>
               <textarea
                 value={taskDescription}
                 onChange={(e) => setTaskDescription(e.target.value)}
-                className="text-sm py-2 px-3 w-full bg-gray-100 rounded-lg border border-gray-300 text-black placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
+                className="text-sm py-2 px-3 w-full bg-gray-700 rounded-lg border border-gray-600 text-white placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
                 rows="8"
                 placeholder="Add task description"
                 required
@@ -161,14 +170,14 @@ const CreateTask = ({ closeCreateTask }) => {
               required
             />
             <div className="mb-4">
-              <label className="text-sm text-gray-600 mb-1 block">
+              <label className="text-sm text-gray-300 mb-1 block">
                 Due Date
               </label>
               <input
                 value={taskDate}
                 onChange={(e) => setTaskDate(e.target.value)}
                 type="date"
-                className="text-sm py-2 px-3 w-full bg-gray-100 rounded-lg border border-gray-300 text-black placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
+                className="text-sm py-2 px-3 w-full bg-gray-700 rounded-lg border border-gray-600 text-white placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
                 required
               />
             </div>
@@ -181,6 +190,11 @@ const CreateTask = ({ closeCreateTask }) => {
           </button>
         </form>
       </div>
+
+      <Notification
+        message="Task created successfully!"
+        isVisible={showNotification}
+      />
     </div>
   );
 };
