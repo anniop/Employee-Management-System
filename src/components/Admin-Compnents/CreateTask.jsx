@@ -10,16 +10,16 @@ export const DropdownList = ({
   value,
 }) => (
   <div className="mb-3">
-    <label className="text-sm text-gray-600 mb-1 block">{label}</label>
+    <label className="text-sm text-black mb-1 block">{label}</label>
     <select
       value={value}
       onChange={onChange}
-      className="text-sm py-2 px-3 w-full rounded-lg bg-gray-100 border border-gray-300 text-black placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
+      className=" text-sm py-2 px-3 w-full rounded-lg bg-gray-100 border border-gray-300 text-black placeholder:text-gray-400 focus:border-indigo-400 focus:outline-none transition duration-300"
       required
     >
-      <option value="">{placeholder}</option>
+      <option value="" >{placeholder}</option>
       {values.map((value) => (
-        <option key={value} value={value}>
+        <option className="text-black" key={value} value={value}>
           {value}
         </option>
       ))}
