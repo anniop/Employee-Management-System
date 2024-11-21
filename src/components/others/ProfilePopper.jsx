@@ -10,7 +10,7 @@ const ProfilePopper = ({ logOutUser, initialData }) => {
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-sm">
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-sm z-50">
       <div className="bg-white text-gray-800 shadow-lg rounded-lg w-96 p-6 z-50">
         <div className="flex justify-between mb-4">
           <h2 className="text-xl font-semibold text-indigo-500">
