@@ -11,6 +11,6 @@ Currently, two official plugins are available:
 https://employee-management-system-jade-eta.vercel.app/
 
 - Contributer to this project are:- 
-Varun Behere
+Varun Behere,
 Aniket Mogal
 
