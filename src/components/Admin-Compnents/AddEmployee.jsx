@@ -53,7 +53,7 @@ const AddEmployee = ({ closeAddEmployee }) => {
     <div className="shadow-lg fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-lg z-50">
       <div className="bg-gray-800 text-white shadow-lg rounded-lg max-w-lg w-full p-6 z-50">
         <div className="flex justify-between mb-4">
-          <h2 className="text-xl font-semibold text-indigo-500">Create Employee</h2>
+          <h2 className="text-xl font-semibold text-indigo-500">Add Employee</h2>
           <XMarkIcon
             className="h-6 w-6 cursor-pointer"
             style={{ stroke: "white", fill: "none" }}
