@@ -17,6 +17,7 @@ const ShortDetailTaskCard = ({
   const priorityColor = priorityColors[priority.toLowerCase()] || "bg-gray-300";
 
   return (
+    // When using the featured section change the color to bg-gray-900
     <div
       className={`h-full min-w-[300px] max-w-[360px] bg-gray-800 rounded-xl flex-shrink-0 shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105`}
     >
