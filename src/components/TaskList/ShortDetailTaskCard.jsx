@@ -19,14 +19,14 @@ const ShortDetailTaskCard = ({
   return (
     // When using the featured section change the color to bg-gray-900
     <div
-      className={`h-full min-w-[300px] max-w-[360px] bg-gray-800 rounded-xl flex-shrink-0 shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105`}
+      className={`h-full min-w-[350px] max-w-[380px] min-h-[180px] bg-gray-900 rounded-xl flex-shrink-0 shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105`}
     >
       <div
         className={`h-1 w-full rounded-t-xl ${priorityColor} transition-all duration-300 ease-in-out`}
       ></div>
 
       <div className="p-6 space-y-4">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center gap-x-8">
           <div className="flex space-x-3">
             {category && (
               <span className="bg-gray-700 text-white px-4 py-2 rounded-full text-xs font-medium transition-all duration-200 hover:bg-gray-600">

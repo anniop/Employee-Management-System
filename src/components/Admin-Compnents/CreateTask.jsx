@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../../context/AuthProvider";
 import { XMarkIcon } from "@heroicons/react/24/solid";
-import Notification from "./Notification";  // Import the Notification component
+import Notification from "./Notification"; // Import the Notification component
 
 export const DropdownList = ({
   label,
@@ -45,7 +45,7 @@ const CreateTask = ({ closeCreateTask }) => {
     "Sales",
   ]);
 
-  const [showNotification, setShowNotification] = useState(false);  // State to control notification visibility
+  const [showNotification, setShowNotification] = useState(false); // State to control notification visibility
 
   useEffect(() => {
     if (userData) {
@@ -58,6 +58,7 @@ const CreateTask = ({ closeCreateTask }) => {
     e.preventDefault();
 
     const newTask = {
+      taskId: Date.now(),
       taskTitle,
       taskDescription,
       taskDate,
@@ -68,6 +69,7 @@ const CreateTask = ({ closeCreateTask }) => {
       newTask: true,
       failed: false,
       completed: false,
+      isFeatured: false,
     };
 
     const updatedData = userData.map((elem) => {
