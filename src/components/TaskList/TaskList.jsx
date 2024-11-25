@@ -1,13 +1,12 @@
 import React from "react";
 import ShortDetailTaskCard from "./ShortDetailTaskCard";
 
-const TaskList = ({ data }) => {
+export const TaskListCard = ({ data }) => {
   return (
     <div
       id="tasklist"
       className="h-[40%] flex items-center overflow-x-auto py-5 mt-10 gap-5 flex-nowrap"
     >
-
       {data?.tasks?.map((elem, idx) => (
         <ShortDetailTaskCard
           key={idx}
@@ -22,5 +21,3 @@ const TaskList = ({ data }) => {
     </div>
   );
 };
-
-export default TaskList;
