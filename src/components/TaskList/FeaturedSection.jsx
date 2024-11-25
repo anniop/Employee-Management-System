@@ -1,5 +1,7 @@
 import React from "react";
 import ShortDetailTaskCard from "./ShortDetailTaskCard";
+import { TagIcon } from "@heroicons/react/16/solid";
+import { StarIcon } from "@heroicons/react/24/outline";
 
 const Featured = ({ data }) => {
   // Here please add logic for featured tasks.
@@ -40,6 +42,7 @@ const Featured = ({ data }) => {
                 className="bg-gray-700 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-600 relative"
               >
                 <div className="absolute top-3 right-3 flex flex-wrap gap-2">
+                  <TagIcon className="h-5 pt-1 w-5 text-gray-300" />
                   <span
                     className={`px-3 py-1 text-xs font-semibold rounded-lg ${
                       elem.priority.toLowerCase() === "high"
@@ -59,9 +62,12 @@ const Featured = ({ data }) => {
                   </span>
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-indigo-300">
-                    {elem.taskTitle}
-                  </h2>
+                  <div className="flex gap-x-2">
+                    <h2 className="text-lg font-semibold text-indigo-300">
+                      {elem.taskTitle}
+                    </h2>
+                    <StarIcon className="w-5" />
+                  </div>
                   <p className="text-sm text-gray-300 mt-2 line-clamp-2">
                     {elem.taskDescription || "No description provided."}
                   </p>

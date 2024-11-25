@@ -16,6 +16,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "high",
+        isFeatured: false,
       },
       {
         taskTitle: "Develop Login Module",
@@ -28,6 +29,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "medium",
+        isFeatured: false,
       },
       {
         taskTitle: "Code Review Preparation",
@@ -40,6 +42,7 @@ const employees = [
         completed: true,
         failed: false,
         priority: "low",
+        isFeatured: false,
       },
     ],
     taskCount: {
@@ -65,6 +68,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "high",
+        isFeatured: false,
       },
       {
         taskTitle: "Fix Payment Gateway Bug",
@@ -77,6 +81,7 @@ const employees = [
         completed: true,
         failed: false,
         priority: "medium",
+        isFeatured: false,
       },
       {
         taskTitle: "Update API Endpoints",
@@ -88,6 +93,7 @@ const employees = [
         completed: false,
         failed: true,
         priority: "low",
+        isFeatured: false,
       },
     ],
     taskCount: {
@@ -113,6 +119,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "high",
+        isFeatured: false,
       },
       {
         taskTitle: "Fix Payment Gateway Bug",
@@ -125,6 +132,7 @@ const employees = [
         completed: true,
         failed: false,
         priority: "medium",
+        isFeatured: false,
       },
       {
         taskTitle: "Update API Endpoints",
@@ -136,6 +144,7 @@ const employees = [
         completed: false,
         failed: true,
         priority: "low",
+        isFeatured: false,
       },
     ],
     taskCount: {
@@ -162,6 +171,7 @@ const employees = [
         completed: true,
         failed: false,
         priority: "high",
+        isFeatured: false,
       },
       {
         taskTitle: "Update Database Schema",
@@ -173,6 +183,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "medium",
+        isFeatured: false,
       },
       {
         taskTitle: "Optimize Code Performance",
@@ -184,6 +195,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "low",
+        isFeatured: false,
       },
     ],
     taskCount: {
@@ -210,6 +222,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "high",
+        isFeatured: false,
       },
       {
         taskTitle: "Compile Feedback Report",
@@ -221,6 +234,7 @@ const employees = [
         completed: true,
         failed: false,
         priority: "medium",
+        isFeatured: false,
       },
       {
         taskTitle: "Review User Feedback",
@@ -233,6 +247,7 @@ const employees = [
         completed: false,
         failed: true,
         priority: "low",
+        isFeatured: false,
       },
     ],
     taskCount: {
@@ -242,7 +257,6 @@ const employees = [
       failed: 1,
     },
   },
-  // New Users
   {
     id: 6,
     firstName: "Amol",
@@ -259,6 +273,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "high",
+        isFeatured: false,
       },
       {
         taskTitle: "Conduct Usability Testing",
@@ -271,6 +286,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "medium",
+        isFeatured: false,
       },
       {
         taskTitle: "Implement Design Changes",
@@ -283,6 +299,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "low",
+        isFeatured: false,
       },
     ],
     taskCount: {
@@ -309,6 +326,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "high",
+        isFeatured: false,
       },
       {
         taskTitle: "Prepare Release Notes",
@@ -321,6 +339,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "medium",
+        isFeatured: false,
       },
       {
         taskTitle: "Conduct Code Walkthrough",
@@ -332,6 +351,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "low",
+        isFeatured: false,
       },
     ],
     taskCount: {
@@ -358,6 +378,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "high",
+        isFeatured: false,
       },
       {
         taskTitle: "Write Unit Tests",
@@ -370,6 +391,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "medium",
+        isFeatured: false,
       },
       {
         taskTitle: "Optimize Database Queries",
@@ -382,6 +404,7 @@ const employees = [
         completed: false,
         failed: false,
         priority: "low",
+        isFeatured: false,
       },
     ],
     taskCount: {
