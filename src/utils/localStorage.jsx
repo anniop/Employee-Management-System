@@ -6,6 +6,7 @@ const employees = [
     password: "123",
     tasks: [
       {
+        taskId: 11111,
         taskTitle: "Initialize Project Repository",
         taskDescription:
           "Complete the project setup and initialize the repository.",
@@ -19,6 +20,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11112,
         taskTitle: "Develop Login Module",
         taskDescription:
           "Create the login functionality for user authentication.",
@@ -32,6 +34,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11113,
         taskTitle: "Code Review Preparation",
         taskDescription:
           "Attend the code review session to discuss recent changes.",
@@ -59,6 +62,7 @@ const employees = [
     password: "123",
     tasks: [
       {
+        taskId: 11114,
         taskTitle: "Draft Technical Documentation",
         taskDescription: "Write technical documentation for the API services.",
         taskDate: "2024-10-26",
@@ -71,6 +75,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11115,
         taskTitle: "Fix Payment Gateway Bug",
         taskDescription:
           "Resolve the bug affecting the payment gateway integration.",
@@ -84,6 +89,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11116,
         taskTitle: "Update API Endpoints",
         taskDescription: "Ensure all API endpoints are up-to-date.",
         taskDate: "2024-10-28",
@@ -110,6 +116,7 @@ const employees = [
     password: "123",
     tasks: [
       {
+        taskId: 11117,
         taskTitle: "Draft Technical Documentation",
         taskDescription: "Write technical documentation for the API services.",
         taskDate: "2024-10-26",
@@ -122,6 +129,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11118,
         taskTitle: "Fix Payment Gateway Bug",
         taskDescription:
           "Resolve the bug affecting the payment gateway integration.",
@@ -135,6 +143,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11119,
         taskTitle: "Update API Endpoints",
         taskDescription: "Ensure all API endpoints are up-to-date.",
         taskDate: "2024-10-28",
@@ -161,6 +170,7 @@ const employees = [
     password: "123",
     tasks: [
       {
+        taskId: 11120,
         taskTitle: "Prepare Project Presentation",
         taskDescription:
           "Create slides and prepare for the project presentation.",
@@ -174,6 +184,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11121,
         taskTitle: "Update Database Schema",
         taskDescription: "Apply necessary changes to the database schema.",
         taskDate: "2024-10-27",
@@ -186,6 +197,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11122,
         taskTitle: "Optimize Code Performance",
         taskDescription: "Refactor code to improve performance and efficiency.",
         taskDate: "2024-10-28",
@@ -212,6 +224,7 @@ const employees = [
     password: "123",
     tasks: [
       {
+        taskId: 11123,
         taskTitle: "Conduct User Interviews",
         taskDescription:
           "Interview users to gather feedback on the new feature.",
@@ -225,6 +238,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11124,
         taskTitle: "Compile Feedback Report",
         taskDescription: "Analyze user feedback and compile a report.",
         taskDate: "2024-10-27",
@@ -237,6 +251,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11125,
         taskTitle: "Review User Feedback",
         taskDescription:
           "Discuss feedback with the team and strategize improvements.",
@@ -264,6 +279,7 @@ const employees = [
     password: "123",
     tasks: [
       {
+        taskId: 11126,
         taskTitle: "Create User Interface Mockups",
         taskDescription: "Design mockups for the user interface.",
         taskDate: "2024-10-29",
@@ -276,6 +292,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11127,
         taskTitle: "Conduct Usability Testing",
         taskDescription:
           "Test the user interface with potential users and gather feedback.",
@@ -289,6 +306,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11128,
         taskTitle: "Implement Design Changes",
         taskDescription:
           "Make design changes based on feedback from usability testing.",
@@ -316,6 +334,7 @@ const employees = [
     password: "123",
     tasks: [
       {
+        taskId: 11129,
         taskTitle: "Implement API Security",
         taskDescription:
           "Ensure that API endpoints are secured against unauthorized access.",
@@ -329,6 +348,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11130,
         taskTitle: "Prepare Release Notes",
         taskDescription:
           "Document the changes and features for the next release.",
@@ -342,6 +362,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11131,
         taskTitle: "Conduct Code Walkthrough",
         taskDescription: "Guide team members through the recent code changes.",
         taskDate: "2024-11-02",
@@ -368,6 +389,7 @@ const employees = [
     password: "123",
     tasks: [
       {
+        taskId: 11132,
         taskTitle: "Setup Development Environment",
         taskDescription:
           "Configure the local development environment for new team members.",
@@ -381,6 +403,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11133,
         taskTitle: "Write Unit Tests",
         taskDescription:
           "Develop unit tests for the new features implemented in the application.",
@@ -394,6 +417,7 @@ const employees = [
         isFeatured: false,
       },
       {
+        taskId: 11134,
         taskTitle: "Optimize Database Queries",
         taskDescription:
           "Review and optimize database queries for better performance.",
