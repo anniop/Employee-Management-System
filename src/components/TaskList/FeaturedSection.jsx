@@ -2,6 +2,8 @@ import React from "react";
 import ShortDetailTaskCard from "./ShortDetailTaskCard";
 
 const Featured = ({ data }) => {
+  // Here please add logic for featured tasks.
+
   return (
     <div className="min-h-[40%] bg-gray-800 px-5 py-5 rounded-xl shadow-lg border border-gray-600 mt-10">
       <div>
