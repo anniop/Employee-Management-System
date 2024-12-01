@@ -34,11 +34,12 @@ export const Header = ({ changeUser, data = {} }) => {
   return (
     <div className="flex items-end justify-between p-6 md:p-10 bg-gray-800 rounded-xl shadow-lg border border-gray-600 relative overflow-hidden">
       <div className="flex gap-5">
-        <img
-          src={profile}
-          className="w-20 h-20 rounded-full cursor-pointer"
-          // onClick={togglePopper}
-        />
+        <span
+          className="bg-white text-blue-500 rounded-full w-20 h-20 flex items-center justify-center text-3xl font-bold"
+          onClick={togglePopper}
+        >
+          {username.charAt(0)}
+        </span>
         <h1 className="text-2xl md:text-3xl font-medium text-white space-y-2">
           Hello <br />
           <span className="text-3xl md:text-4xl font-semibold text-indigo-400">
@@ -56,7 +57,7 @@ export const Header = ({ changeUser, data = {} }) => {
       </div>
 
       {isPopperVisible && (
-        <ProfilePopper logOutUser={logOutUser} togglePopper={togglePopper} />
+        <ProfilePopper initialData={data} onClose={togglePopper} />
       )}
     </div>
   );
